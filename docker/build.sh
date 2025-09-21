@@ -17,7 +17,7 @@ make -C /app/algolymp BIN_DIR=/usr/bin/algolymp
 mkdir -p ~/.config/polygon2ejudge
 mkdir -p ~/.config/algolymp
 
-cat > ~/./config/polygon2ejudge/user_config.yaml <<'YAML'
+cat > ~/.config/polygon2ejudge/user_config.yaml <<'YAML'
 version: user.2
 api_key: 
 api_secret: 
@@ -28,7 +28,7 @@ ejudge_password:
 nolint_string: ""
 YAML
 
-cat > ~/./config/algolymp/config.json <<'JSON'
+cat > ~/.config/algolymp/config.json <<'JSON'
 {
         "ejudge": {
                 "url": "http://ejudge-net/",
