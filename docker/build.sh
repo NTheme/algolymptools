@@ -27,7 +27,6 @@ ejudge_login:
 ejudge_password: 
 nolint_string: ""
 YAML
-
 cat > ~/.config/algolymp/config.json <<'JSON'
 {
         "ejudge": {
