@@ -1,4 +1,3 @@
 #!/bin/sh
-set -e
 
-echo Welcome from AlgOlympTools!
+exec /bin/bash -l
