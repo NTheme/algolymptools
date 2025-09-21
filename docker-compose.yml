@@ -1,0 +1,12 @@
+services:
+  algolymptools:
+    build:
+        context: .
+    image: "algolymptools:latest"
+    container_name: "algolymptools"
+    volumes:
+      - ejudge_data:/home/judges
+
+volumes:
+  ejudge_data:
+    external: True
