@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec /bin/bash -l
+exec sleep infinity
