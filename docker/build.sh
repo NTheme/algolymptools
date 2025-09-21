@@ -11,7 +11,8 @@ RELEASE='RELEASE=1'
 
 rm -rf .git
 
-go build -o /usr/bin/p2e ./polygon2ejudge
+ls /app
+go build -o /usr/bin/p2e /app/polygon2ejudge
 make ./algolymp BIN_DIR=/usr/bin/algolymp
 
 mkdir -p .config/polygon2ejudge
