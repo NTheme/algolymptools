@@ -12,10 +12,10 @@ RELEASE='RELEASE=1'
 rm -rf .git
 
 go build -C /app/polygon2ejudge -o /usr/bin/p2e .
-make /app/algolymp BIN_DIR=/usr/bin/algolymp
+make -С /app/algolymp BIN_DIR=/usr/bin/algolymp
 
-mkdir -p .config/polygon2ejudge
-mkdir -p .config/algolymp
+mkdir -p ~/.config/polygon2ejudge
+mkdir -p ~/.config/algolymp
 
 cat > ~/./config/polygon2ejudge/user_config.yaml <<'YAML'
 version: user.2
