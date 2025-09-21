@@ -1,0 +1,1 @@
+echo Welcome from AlgOlympTools!
