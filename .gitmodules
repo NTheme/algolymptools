@@ -1,0 +1,8 @@
+[submodule "polygon2ejudge"]
+	path = polygon2ejudge
+	url = git@github.com:NTheme/polygon2ejudge.git
+	branch = master
+[submodule "algolymp"]
+	path = algolymp
+	url = git@github.com:NTheme/algolymp.git
+	branch = master
