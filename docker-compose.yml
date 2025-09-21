@@ -7,12 +7,12 @@ services:
     volumes:
       - ejudge_data:/home/judges:ro
     networks:
-      - ejudge-net
+      - ejudge_net
 
 volumes:
   ejudge_data:
-    external: True
+    name: ejudge_data
 
 networks:
-  ejudge-net:
-    external: true
+  ejudge_net:
+    name: ejudge_net
