@@ -6,7 +6,13 @@ services:
     container_name: "algolymptools"
     volumes:
       - ejudge_data:/home/judges
+    networks:
+      - ejudge-net
 
 volumes:
   ejudge_data:
     external: True
+
+networks:
+  ejudge-net:
+    external: true

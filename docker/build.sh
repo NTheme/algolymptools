@@ -13,3 +13,36 @@ rm -rf .git
 
 go build -o /usr/bin/p2e ./polygon2ejudge
 make ./algolymp BIN_DIR=/usr/bin/algolymp
+
+mkdir -p .config/polygon2ejudge
+mkdir -p .config/algolymp
+
+cat > ./config/polygon2ejudge/user_config.yaml <<'YAML'
+version: user.2
+api_key: 
+api_secret: 
+polygon_login: 
+polygon_password:
+ejudge_login: 
+ejudge_password: 
+nolint_string: ""
+YAML
+
+cat > ./config/algolymp/config.json <<'JSON'
+{
+        "ejudge": {
+                "url": "http://ejudge-net/",
+                "login": "ejudge",
+                "password": "ejudge",
+                "judgesDir": "/home/judges"
+        },
+        "system": {
+                "editor": "vim"
+        },
+        "polygon": {
+                "url": "https://polygon.codeforces.com",
+                "apiKey": "",
+                "apiSecret": ""
+        }
+}
+JSON
