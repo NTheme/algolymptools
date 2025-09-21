@@ -30,7 +30,7 @@ YAML
 cat > ~/.config/algolymp/config.json <<'JSON'
 {
         "ejudge": {
-                "url": "http://ejudge-net/",
+                "url": "http://ejudge/",
                 "login": "ejudge",
                 "password": "ejudge",
                 "judgesDir": "/home/judges"
