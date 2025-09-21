@@ -1,6 +1,6 @@
 FROM fedora:40 AS dependencies
 
-RUN dnf -y update && dnf -y install go
+RUN dnf -y update && dnf -y install go vim
 
 RUN dnf clean all
 

@@ -5,7 +5,7 @@ services:
     image: "algotools:latest"
     container_name: "algotools"
     volumes:
-      - ejudge_data:/home/judges:ro
+      - ejudge_data:/home/judges
     networks:
       - ejudge_net
 
