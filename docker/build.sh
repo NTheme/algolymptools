@@ -12,4 +12,6 @@ RELEASE='RELEASE=1'
 rm -rf .git
 
 go build -C /app/polygon2ejudge -o /usr/bin/p2e .
-make -C /app/algolymp BIN_DIR=/usr/bin/algolymp
+make -C /app/algolymp BIN_DIR=/usr/bin
+
+cp /app/capy/capy /usr/bin

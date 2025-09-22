@@ -6,8 +6,8 @@ services:
     container_name: "algotools"
     volumes:
       - ejudge_data:/home/judges
-      - ${HOME}/.config/polygon2ejudge:/root/.config/polygon2ejudge:ro
-      - ${HOME}/.config/algolymp:/root/.config/algolymp:ro
+      - ${HOME}/data/algotools/polygon2ejudge:/root/.config/polygon2ejudge
+      - ${HOME}/data/algotools/algolymp:/root/.config/algolymp
     networks:
       - ejudge_net
 
