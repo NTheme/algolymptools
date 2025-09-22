@@ -6212,3 +6212,5 @@ for id in $PROBLEMS; do
   gibon -i $id -m commit
   gibon -i $id -m package
 done
+
+rm /tmp/testlib.h
