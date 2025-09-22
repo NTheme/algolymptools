@@ -1,0 +1,20 @@
+services:
+  algotools:
+    build:
+        context: .
+    image: "algotools:latest"
+    container_name: "algotools"
+    volumes:
+      - ejudge_data:/home/judges
+      - ${HOME}/data/algotools/polygon2ejudge:/root/.config/polygon2ejudge
+      - ${HOME}/data/algotools/algolymp:/root/.config/algolymp
+    networks:
+      - ejudge_net
+
+volumes:
+  ejudge_data:
+    name: ejudge_data
+
+networks:
+  ejudge_net:
+    name: ejudge_net

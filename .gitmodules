@@ -1,0 +1,12 @@
+[submodule "ejudge"]
+	path = ejudge
+	url = https://github.com/NTheme/ejudge.git
+[submodule "algocode"]
+	path = algocode
+	url = https://github.com/NTheme/algocode.git
+[submodule "algotools/algolymp"]
+	path = algotools/algolymp
+	url = https://github.com/NTheme/algolymp.git
+[submodule "algotools/polygon2ejudge"]
+	path = algotools/polygon2ejudge
+	url = https://github.com/NTheme/polygon2ejudge.git
