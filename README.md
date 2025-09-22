@@ -1,1 +1,0 @@
-# algolymp & polygon2ejudge
