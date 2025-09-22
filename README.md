@@ -11,7 +11,7 @@ Able to start separatly
 To install and start the full system, set paths for databases in `docker-compose.yml` as needed. Afterward, run:
 
 ```bash
-docker compose --build up -d
+docker compose up --build -d
 ```
 
 ### One Service
