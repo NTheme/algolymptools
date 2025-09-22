@@ -1,0 +1,66 @@
+services:
+  mariadb:
+    extends:
+      file: ./ejudge/docker-compose.yml
+      service: mariadb
+
+  ejudge:
+    extends:
+      file: ./ejudge/docker-compose.yml
+      service: ejudge
+    depends_on:
+      - mariadb
+
+  memcached:
+    extends:
+      file: ./algocode/docker-compose.yml
+      service: memcached
+
+  mongo:
+    extends:
+      file: ./algocode/docker-compose.yml
+      service: mongo
+
+  algocode:
+    extends:
+      file: ./algocode/docker-compose.yml
+      service: algocode
+    depends_on:
+      - memcached
+      - mongo
+      - mariadb
+
+  algotools:
+    extends:
+      file: ./algotools/docker-compose.yml
+      service: algotools
+
+volumes:
+  mysql_data:
+    name: mysql_data
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/data/mysql
+  ejudge_data:
+    name: ejudge_data
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/data/ejudge
+  mongo_data:
+    name: mongo_data
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/data/mongo      
+  algocode_data:
+    name: algocode_data
+    driver_opts:
+      type: none
+      o: bind
+      device: ${HOME}/data/algocode
+
+networks:
+  ejudge_net:
+    name: ejudge_net
